@@ -14,7 +14,7 @@
       Version="$(var.Version)"
       Manufacturer="$(var.Author)">
     
-    <Package InstallerVersion="300" Compressed="yes" InstallScope="perMachine" />
+    <Package InstallerVersion="301" Compressed="yes" InstallScope="perMachine" />
     <MajorUpgrade DowngradeErrorMessage="A newer version of $(var.Name) is already installed." />
     <MediaTemplate EmbedCab="yes" />
     <UIRef Id="WixUI_InstallDir" />
@@ -98,11 +98,12 @@
           <Shortcut Id="GuiShortcut" Name="$(var.Name)" Directory="ProgramMenuFolder" Icon="synergy.ico" Advertise="yes" />
         </File>
 
-        <File Source="$(var.QtPath)\libgcc_s_dw2-1.dll" CompanionFile="GuiProgram" />
-        <File Source="$(var.QtPath)\mingwm10.dll" CompanionFile="GuiProgram" />
-        <File Source="$(var.QtPath)\QtCore4.dll" CompanionFile="GuiProgram" />
-        <File Source="$(var.QtPath)\QtGui4.dll" CompanionFile="GuiProgram" />
-        <File Source="$(var.QtPath)\QtNetwork4.dll" CompanionFile="GuiProgram" />
+        <!--<File Source="$(var.QtPath)\libgcc_s_dw2-1.dll" CompanionFile="GuiProgram" />
+        <File Source="$(var.QtPath)\mingwm10.dll" CompanionFile="GuiProgram" />-->
+        <File Source="$(var.QtPath)\Qt5Core.dll" CompanionFile="GuiProgram" />
+        <File Source="$(var.QtPath)\Qt5Gui.dll" CompanionFile="GuiProgram" />
+        <File Source="$(var.QtPath)\Qt5Network.dll" CompanionFile="GuiProgram" />
+        <File Source="$(var.QtPath)\Qt5Widgets.dll" CompanionFile="GuiProgram" />
         
       </Component>
       

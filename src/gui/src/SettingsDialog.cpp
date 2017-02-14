@@ -27,6 +27,8 @@
 #include <QMessageBox>
 #include <QFileDialog>
 
+#undef interface
+
 SettingsDialog::SettingsDialog(QWidget* parent, AppConfig& config) :
 	QDialog(parent, Qt::WindowTitleHint | Qt::WindowSystemMenuHint),
 	Ui::SettingsDialogBase(),

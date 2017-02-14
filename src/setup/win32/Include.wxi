@@ -6,7 +6,7 @@
   
   <?define BinPath="../../../bin/$(var.Configuration)" ?>
   <?define ResPath="../../../res" ?>
-  <?define QtPath="C:\Qt\2010.02\qt\bin" ?>
+  <?define QtPath="D:\Qt\Qt5.6.2\5.6\msvc2015\bin" ?>
 
   <?ifndef Version ?>
   <?define Version="1.0.0" ?>
@@ -25,6 +25,6 @@
   <?define UpgradeGuid="$(var.UpgradeGuid32)" ?>
   <?endif?>
   
-  <?define CRT="$(env.CommonProgramFiles)\Merge Modules\Microsoft_VC100_CRT_$(var.Platform).msm" ?>
+  <?define CRT="$(env.CommonProgramFiles)\Merge Modules\Microsoft_VC140_CRT_$(var.Platform).msm" ?>
   
 </Include>

@@ -22,6 +22,8 @@
 
 #include <QString>
 
+#undef interface
+
 // this should be incremented each time a new page is added. this is
 // saved to settings when the user finishes running the wizard. if
 // the saved wizard version is lower than this number, the wizard
